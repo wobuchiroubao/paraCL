@@ -1,0 +1,19 @@
+fib1 = 1;
+fib2 = 1;
+fibn;
+num = ?;
+
+if (num <= 0)
+	print 0;
+else if (num <= 2)
+	print 1;
+else {
+	i = 2;
+	while (i < num) {
+		fibn = fib1 + fib2;
+		fib1 = fib2;
+		fib2 = fibn;
+		i = i + 1;
+	}
+	print fibn;
+}

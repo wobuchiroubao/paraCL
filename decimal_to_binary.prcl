@@ -1,0 +1,14 @@
+num = ?;
+i = 1;
+newnum;
+binary = 0;
+
+if (num >= 0)
+	do {
+		newnum = num / 2;
+		binary = binary + i * (num - 2 * newnum);
+		i = 10 * i;
+		num = newnum;
+	} while (newnum != 0);
+
+print binary;
